@@ -1,0 +1,78 @@
+<!--
+
+The contact form on this page does not work!!!
+You'll need to add some javascript / PHP to get this working yourself
+
+-->
+
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>John Smith: Contact Me</title>
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body background="img/dark-triangles.png">
+    <div class="container">
+        <div class="titleRect">
+            <div class="titleRect_text">John Smith</div>
+        </div>
+
+        <center>
+            <a href="index.html">
+                <button class="mainButtonLeft">Home</button>
+            </a>
+            <a href="interests.html">
+                <button class="mainButton">Interests</button>
+            </a>
+            <a href="projects.html">
+                <button class="mainButton">Projects</button>
+            </a>
+            <a href="contactme.html">
+                <button class="mainButtonRight">Request CV</button>
+            </a>
+        </center>
+        <br><br><br><br>
+        <div class="TextBlock">
+            <div class="heading_text">Contact Me</div>
+            <hr>
+            <p>Please use the contact form bellow to contact me if you have questions or would like a copy of my CV. I will try to reply within 3 days.</p>
+        </div>
+        <div class="TextBlock">
+            <div style="display:block;" id="Form">
+                <p>First Name: *<br>
+                    <input class="formInputField" type="text" id="firstname" value="">
+                    <br><br> Last Name: *<br>
+                    <input class="formInputField" type="text" id="lastname" value="">
+                    <br><br> Email: *<br>
+                    <input class="formInputField" type="text" id="email" value="">
+                    <br><br> Message:
+                    <br>
+                    <textarea class="formInputArea" id="message" cols="40" rows="5" value=""></textarea>
+                </p><br><br style="display:block">
+                <p id="ErrorMessage" style="color:#FF0004; display:none;"><strong>Error: Please fill in all the required fields indicated by an asterisk.</strong></p>
+                <button class="projButton">Submit</button>
+            </div>
+
+            <!-- Enable while message is being sent with Javascript-->
+            <div style="display:none;" id="Sending">
+                <p>Sending.... <br><br> This should take no longer than 5 seconds. Please do not leave or refresh the page.</p>
+            </div>
+
+            <!-- Enable when message sent successfully with Javascript-->
+            <div style="display:none;" id="Recieved">
+                <p>Message recieved. Thank you.</p>
+            </div>
+
+            <!-- Enable when message failed to send with Javascript-->
+            <div style="display:none;" id="FormError">
+                <p>The form failed to send. Please try again later.</p>
+            </div>
+        </div>
+        <br><br>
+    </div>
+</body>
+
+</html>

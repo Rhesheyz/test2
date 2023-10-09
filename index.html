@@ -5,10 +5,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio</title>
-</head>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' </head>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
 
-<body>
+    <body>
 
-</body>
+        <section class="bg-beranda" id="beranda">
+            <h1 class="sm:text-4xl text-3xl font-medium title-font mb-4 text-black-900">Selamat Datang di Portofolio Saya</h1>
+        </section>
+
+        <section class="bg-tentang" id="tentang">
+            <h2 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-black-900" class="judul_tentang">Tentang Saya</h2>
+            <div class="tentang-content">
+                <img src="profile.png" alt="Foto Saya" class="foto-lingkaran">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet sollicitudin nibh. Vivamus sollicitudin et leo tempor blandit. Donec accumsan et felis quis laoreet. Maecenas in ullamcorper risus. Maecenas at lectus nisl. Aenean
+                    ut enim purus. Sed molestie dolor arcu, at posuere felis interdum eu. Etiam non mauris sed leo semper mollis non sed tellus. Morbi sed placerat ex, ut blandit orci. Aliquam erat volutpat. Suspendisse lobortis, felis quis varius hendrerit,
+                    ex orci fermentum purus, in cursus risus risus et libero.</p>
+            </div>
+        </section>
+
+
+        <section class="bg-porto" id="portofolio">
+            <h2>Portofolio</h2>
+            <div class="project">
+                <img src="project1.jpg" alt="Proyek 1">
+                <h3>Nama Proyek 1</h3>
+                <p>Deskripsi singkat proyek 1.</p>
+            </div>
+            <div class="project">
+                <img src="project2.jpg" alt="Proyek 2">
+                <h3>Nama Proyek 2</h3>
+                <p>Deskripsi singkat proyek 2.</p>
+            </div>
+            <!-- Tambahkan proyek lainnya di sini -->
+        </section>
+
+        <section id="kontak" class="kontak" class="text-black-600 body-font">
+            <form id="contact-form" action="https://formspree.io/f/xwkdwgvr" method="POST">
+                <div class="container px-5 py-24 mx-auto">
+                    <div class="flex flex-col text-center w-full mb-12">
+                        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-black-900">
+                            Contact Me
+                        </h1>
+                        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+                            Thank you for visiting our website. Let me know if you have something to say
+                        </p>
+                    </div>
+                    <div class="lg:w-1/3 w-full mx-auto px-8">
+                        <div class="relative flex-grow w-full">
+                            <label for="full-name" class="leading-7 text-sm text-black-600">Full Name</label
+                    >
+                    <input
+                      type="text"
+                      id="full-name"
+                      name="full-name"
+                      class="w-full bg-white bg-opacity-50 rounded border border-black-300 focus:border-gray-500 focus:bg-transparent focus:ring-2 focus:ring-gray-200 text-base outline-none text-black-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    />
+                  </div>
+                  <div class="relative flex-grow w-full">
+                    <label for="email" class="leading-7 text-sm text-black-600"
+                      >Email</label
+                    >
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      class="w-full bg-white bg-opacity-50 rounded border border-black-300 focus:border-gray-500 focus:bg-transparent focus:ring-2 focus:ring-gray-200 text-base outline-none text-black-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    />
+                  </div>
+                  <div class="relative flex-grow w-full">
+                    <label for="subject" class="leading-7 text-sm text-black-600"
+                      >Subject</label
+                    >
+                    <input
+                      type="text"
+                      id="subject"
+                      name="subject"
+                      class="w-full bg-white bg-opacity-50 rounded border border-black-300 focus:border-gray-500 focus:bg-transparent focus:ring-2 focus:ring-gray-200 text-base outline-none text-black-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    />
+                  </div>
+                  <div class="relative flex-grow w-full">
+                    <label for="message" class="leading-7 text-sm text-black-600"
+                      >Message</label
+                    >
+                    <textarea
+                      type="text"
+                      id="message"
+                      name="message"
+                      class="w-full bg-white bg-opacity-50 rounded border border-black-300 focus:border-gray-500 focus:bg-transparent focus:ring-2 focus:ring-gray-200 text-base outline-none text-black-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    ></textarea>
+                  </div>
+                  <div class="w-full h-4"></div>
+                  <button
+                    type="submit"
+                    class="mt-4 w-full text-white bg-black border-0 py-2 px-8 focus:outline-none hover:bg-white hover:text-black rounded text-lg"
+                  >
+                    Send my message
+                  </button>
+                  <div
+                    class="loader ease-linear mt-5 rounded-full border-4 border-t-4 border-black-200 h-6 w-6 mx-auto"
+                  ></div>
+                </div>
+              </div>
+            </form>
+          </section>
+
+        <footer>
+            <p>&copy; 2023 Fahrizal Aldi</p>
+        </footer>
+
+
+        <header>
+            <nav class="nav-transparan">
+                <div class="logo">
+                    <h1>Fahrizal Aldi</h1>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="#beranda">Beranda</a></li>
+                    <li><a href="#tentang">Tentang Saya</a></li>
+                    <li><a href="#portofolio">Portofolio</a></li>
+                    <li><a href="#kontak">Kontak Saya</a></li>
+                </ul>
+            </nav>
+        </header>
+        <script src="script.js"></script>
+    </body>
 
 </html>
